@@ -1,0 +1,5 @@
+C:\Users\Nico\Documents\GIT\FoxytWorld\FoxytNetworking\bin\Debug\FoxytNetworking.dll
+C:\Users\Nico\Documents\GIT\FoxytWorld\FoxytNetworking\bin\Debug\FoxytNetworking.pdb
+C:\Users\Nico\Documents\GIT\FoxytWorld\FoxytNetworking\obj\Debug\FoxytNetworking.csprojResolveAssemblyReference.cache
+C:\Users\Nico\Documents\GIT\FoxytWorld\FoxytNetworking\obj\Debug\FoxytNetworking.dll
+C:\Users\Nico\Documents\GIT\FoxytWorld\FoxytNetworking\obj\Debug\FoxytNetworking.pdb

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6161EF71-3BB0-4D1E-92C4-37DAB00B4E5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FoxytNetworking</RootNamespace>
+    <AssemblyName>FoxytNetworking</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Event\Base\BaseEventArgs.cs" />
+    <Compile Include="Server\Filter\IConnectivityFilter.cs" />
+    <Compile Include="Server\Filter\NumberLimitConnectivityFilter.cs" />
+    <Compile Include="Stream\Message\IMessage.cs" />
+    <Compile Include="Session\Processor\DefaultDataProcessor.cs" />
+    <Compile Include="Session\Processor\IDataProcessor.cs" />
+    <Compile Include="Session\Protocol\SyncProtocol\SyncProtocolDataProcessor.cs" />
+    <Compile Include="Session\Processor\SimpleDataProcessor.cs" />
+    <Compile Include="Session\Protocol\SyncProtocol\ClientSync.cs" />
+    <Compile Include="Server\Factory\GenericSessionFactory.cs" />
+    <Compile Include="Server\Factory\ISessionFactory.cs" />
+    <Compile Include="Session\Session.cs" />
+    <Compile Include="Session\DataSession.cs" />
+    <Compile Include="Event\SessionConnectArgs.cs" />
+    <Compile Include="Event\SessionDataReceivedArgs.cs" />
+    <Compile Include="Event\SessionDisconnectArgs.cs" />
+    <Compile Include="Server\Server.cs" />
+    <Compile Include="Server\ConstantsServer.cs" />
+    <Compile Include="Server\DataServer.cs" />
+    <Compile Include="Session\SessionDataReceiver.cs" />
+    <Compile Include="Session\Client.cs" />
+    <Compile Include="Test\TestClassic.cs" />
+    <Compile Include="Stream\IO\BytesReader.cs" />
+    <Compile Include="Stream\IO\BytesWriter.cs" />
+    <Compile Include="Tool\Logger\DebugLogger.cs" />
+    <Compile Include="Tool\Logger\ILogger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Exceptions\BufferSizeException.cs" />
+    <Compile Include="Session\Protocol\SyncProtocol\SyncProtocol.cs" />
+    <Compile Include="Session\Protocol\IProtocol.cs" />
+    <Compile Include="Tool\UID\IUIDGenerator.cs" />
+    <Compile Include="Tool\UID\UniqueIDGenerator.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
