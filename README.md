@@ -7,7 +7,7 @@ Nicolas GAUTIER <ngautier@enroot.fr>
 
 Avantages de la librairie
 ============
-* Etre simple à comprendre (compréhensible à des fins d'étude sur les sockets).
+* Etre simple à comprendre (compréhensible à des fins d'études sur les sockets).
 * Performances correctes.
 * Création de protocole pour de l'inter-communication entre application.
 * Obtenir un échange entre des applications de façon suivi.
